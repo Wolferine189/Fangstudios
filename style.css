@@ -1,0 +1,576 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: white; */
+
+}
+
+.container {
+    background: url("media/bg-1.jpg");
+    background-position: center;
+    background-size: cover;
+
+
+}
+.up-top{
+    width: 20px;
+    position:fixed;
+
+   display: block;
+   opacity: 1;
+   transition: all .5s;
+   /* margin: 20px 0px; */
+    top: 88%;
+    left: 91%;
+
+    
+}
+.active{
+    /* margin: 0px; */
+    opacity: 1;
+    width: 20px;
+    position:fixed;
+
+   display: block;
+
+   transition: all .5s;
+   /* margin: 20px 0px; */
+    top: 88%;
+    left: 91%;
+
+}
+.up-top img{
+    width: 70px;
+    background:rgba(0, 0, 0, 0.5) ;
+    border-radius: 50%;
+padding: 0 3px;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+
+    padding: 10px;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    color: rgb(255, 255, 255);
+    width: auto;
+    height: 70px;
+    justify-content: space-between;
+
+
+}
+
+.logo {
+
+    width: 90px;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-image: url("media/fang\ logo.png")
+}
+.options {
+    justify-content: space-between;
+    display: flex;
+}
+
+.options ul {
+    display: flex;
+    padding: 5px 0px;
+  
+
+
+}
+
+.options ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 15px;
+
+}
+
+.options ul li a {
+    display: flex;
+    list-style: none;
+    padding: 1px 4px;
+    letter-spacing: 1px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: white;
+
+
+
+}
+
+.options ul li a::after {
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+}
+
+.options ul li a:hover::after {
+    width: 100%;
+    left: 0%;
+    transition: 0.6s ease;
+}
+.options img{
+    width: 50px;
+    height: auto;
+    transform: .6s;
+}
+.options img:hover{
+    rotate: 180deg;
+}
+
+
+/* ##########################contain starts################# */
+.contain {
+    width: auto;
+
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("media/bg-1.jpg");
+
+    background-position: center;
+    background-size: cover;
+
+
+
+}
+
+
+#contain {
+    text-align: center;
+    display: flex;
+
+
+}
+
+#contain p1,
+p2,
+p3 {
+    font-size: 40px;
+    position: absolute;
+    font-weight: bolder;
+
+    color: rgb(0, 0, 0);
+    font-family: 'Barlow ', sans-serif;
+
+}
+
+#contain p1 {
+    left: 6%;
+    top: 33%;
+
+}
+
+#contain p2 {
+    left: 11%;
+    top: 41%;
+
+}
+
+#contain p3 {
+    left: 22%;
+    top: 49%;
+    stroke: 1px solid white;
+}
+
+
+#contain p1 span,
+p2 span,
+p3 span {
+    font-weight: 100;
+    padding: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+}
+
+.hire {
+    width: 100px;
+    height: 38px;
+    background: none;
+    text-transform: uppercase;
+    position: relative;
+    top: 48%;
+    left: 21%;
+    text-align: center;
+    /* z-index: 2; */
+    padding: 5px 20px;
+
+
+    border: 1px solid #ffffff;
+    background: none;
+
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+
+    transition: 0.8s;
+
+    overflow: hidden;
+
+
+}
+
+
+
+.hire::before {
+    content: '';
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    background-color: #2988cc;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 0 0 50% 50%;
+    transition: 1s;
+
+}
+
+.hire:hover::before {
+    height: 200%;
+
+
+}
+
+.hire:hover {
+    color: #2988cc;
+    border: 1px solid #2988cc;
+}
+
+
+
+
+.hire a,
+.purchase a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    z-index: 2;
+    position: relative;
+
+}
+
+
+
+
+
+.purchase {
+    width: 180px;
+    height: 38px;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid white;
+    position: relative;
+    top: 48%;
+    left: 28%;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px 20px;
+    overflow: hidden;
+}
+
+.purchase::before {
+    content: '';
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    background-color: #2988cc;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 0 0 50% 50%;
+    transition: 1s;
+
+
+}
+
+.purchase:hover {
+    border: 1px solid #2988cc;
+}
+
+.purchase:hover::before {
+    height: 200%;
+}
+
+
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$ Service $$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+
+.Services {
+
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.holder {
+    width: 90%;
+    height: 90%;
+    background-color: #0d1b2a;
+    margin: auto;
+    justify-content: center;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+
+    margin: auto;
+    top: 5%;
+
+}
+
+.Services h1 {
+    padding: 10px 0px;
+    font-family: 'Kanit', sans-serif;
+    font: bolder;
+}
+
+.Service h1::after {
+    content: '';
+    background-color: #000;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+
+}
+
+.screen {
+    display: flex;
+}
+
+.box1 {
+    display: inline-block;
+    padding: 50px;
+
+    color: white;
+    background-color: #1b263b;
+    width: 300px;
+}
+
+.box1 img {
+    width: 120px;
+    padding-top: 100px;
+}
+
+.box2 img {
+    width: 120px;
+    padding-top: 100px;
+}
+
+.box3 img {
+    width: 120px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.box4 img {
+    width: 120px;
+    margin: auto;
+    padding-top: 100px;
+
+}
+
+.box2 {
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    width: 300px;
+
+}
+
+.box3 {
+    background-color: #1b263b;
+    display: inline-block;
+    padding: 20px;
+    width: 300px;
+    color: white;
+
+}
+
+.box4 {
+    display: inline-block;
+    width: 300px;
+    padding: 20px;
+    color: white;
+}
+
+.screen h1 {
+    font-size: 24px;
+}
+
+.screen p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ About us $$$$$$$$$$$$$$$$ */
+.about {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+
+
+}
+
+.about h1 {
+    padding: 10px 0px;
+    font-family: 'Kanit', sans-serif;
+    font: bolder;
+}
+
+.work-area {
+    width: 90%;
+    height: 90%;
+    background-color: #2988cc;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.work-area img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border: 2px solid white;
+}
+
+.work-area p1 {
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 10px;
+    font: bold;
+    color: black;
+    margin: 10px;
+}
+.work-area p1 span{
+   
+    color: white;
+}
+
+hr{
+    color: silver;
+    margin: 15px 5px;
+}
+
+/* $$$$$$$$$$$$$$$$$$$$$$$$$$ Contact$$$$$$$$$$$$$$$$$ */
+
+.Contact{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.Contact h1{ 
+    padding: 10px 0px;
+    font-family: 'Kanit', sans-serif;
+    font: bolder;
+}
+
+ .boxes form{
+    display: flex;
+    flex-direction: column;
+margin: auto;
+
+margin-top: 20px; ;
+    align-items: center;
+
+}
+form input{
+    font-size: 20px;
+    width: 50%;
+    height:auto;
+    padding: 10px;
+    
+    margin: 10px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 10px;
+
+
+}
+input::placeholder{
+    color: #000;
+
+}
+textarea{
+    font-size: 20px;
+    padding: 10px 20px;
+
+}
+button{
+    font-size: 20px;
+    outline: none;
+    padding: 4px 8px ;
+    margin: 10px 0;
+
+}
+
+
+/* $$$$$$$$$$$$$$$$$$$$$$$ Responsive$$$$$$$$$$$$$$$$$$$$$$$$$$$  */
+
+
+@media (min-width:640px){
+    .options img{
+        display: none;
+    }
+    
+
+
+
+}
+
+@media (max-width:640px){
+    
+    
+    .options ul{
+        display: none;
+    }
+    .Services{
+        height: auto;
+    }
+    .screen{
+        display: block;
+        height: auto;
+    }
+.up-top{
+    top: 83%;
+    left: 80%;
+}
+.hire{
+    left: 12%;
+}
+.purchase{
+    left: 17%;
+}
+
+}
